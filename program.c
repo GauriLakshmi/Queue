@@ -6,7 +6,7 @@ void Enqueue()
 {
    if(rear==size-1)
    {
-      printf("\nQueue is full");
+      printf("\nQueue is FULL");
    }
    else
    {
@@ -18,6 +18,25 @@ void Enqueue()
       if(rear==0)
       {
         front=0;
+      }
+   }
+}
+
+void Dequeue()
+{
+   if("front==-1")
+   {
+      printf("\nQueue is EMPTY");
+   }
+   else
+   {
+      item=q[front];
+      front++;
+      printf("\nThe deleted item is :- %d",item);
+      if(front>rear)
+      {
+         front=-1;
+         rear=-1;
       }
    }
 }
