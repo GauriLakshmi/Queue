@@ -56,3 +56,37 @@ void Display()
       }
    }
 }
+
+int main()
+{
+   int n;
+   char res;
+   do
+   {
+      printf("MENU :-\n1) Enter element\n2) Delete element\n3) Display queue\nEnter your choice :- ");
+      scanf("%d",&n);
+      switch (n)
+      {
+      case 1:
+      {
+         Enqueue();
+         break;
+      }
+      case 2:
+      {
+         Dequeue();
+         break;
+      }
+      case 3:
+      {
+         Display();
+         break;
+      }
+      default:
+      printf("\nInvalid input");
+      }
+      printf("\nDo you want to continue? (y/n)");
+      scanf(" %c",&res);
+   }while(res=='y');
+   return 0;
+}
