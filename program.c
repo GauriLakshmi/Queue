@@ -40,3 +40,19 @@ void Dequeue()
       }
    }
 }
+
+void Display()
+{
+   if(front==-1)
+   {
+      printf("\nQueue is EMPTY");
+   }
+   else
+   {
+      printf("\nQueue :-\n");
+      for(int i=front;i<=rear;i++)
+      {
+         printf("%d\t",q[i]);
+      }
+   }
+}
