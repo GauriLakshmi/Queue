@@ -24,15 +24,15 @@ void Enqueue()
 
 void Dequeue()
 {
-   if("front==-1")
+   if(front==-1||front>rear)
    {
       printf("\nQueue is EMPTY");
    }
    else
    {
       item=q[front];
-      front++;
       printf("\nThe deleted item is :- %d",item);
+      front++;
       if(front>rear)
       {
          front=-1;
